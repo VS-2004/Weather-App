@@ -40,7 +40,7 @@ weather-app/
 ├── README.md
 └── .gitignore
 ---
-
+```
 ## ⚙️ How to Run Locally
 
 ### Step 1: Run Backend (Flask API)
