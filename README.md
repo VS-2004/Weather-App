@@ -28,6 +28,7 @@ The application fetches real-time weather data using the **Open-Meteo API** (com
 
 ## 🧱 Project Structure
 
+```text
 weather-app/
 ├── backend/
 │   ├── app.py
@@ -38,7 +39,6 @@ weather-app/
 │   └── style.css
 ├── README.md
 └── .gitignore
-
 ---
 
 ## ⚙️ How to Run Locally
