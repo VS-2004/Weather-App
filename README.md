@@ -1,19 +1,28 @@
 # 🌦️ Full Stack Weather App
 
-A full-stack weather application built using Python (Flask) and vanilla frontend technologies (HTML, CSS, JavaScript).
+A full-stack weather application built using **Python (Flask)** for the backend and **vanilla frontend technologies** (HTML, CSS, JavaScript).
 
-The application fetches real-time weather data using the Open-Meteo API (no API key required) and displays it through a clean and simple user interface.
+The application fetches real-time weather data using the **Open-Meteo API** (completely free, no API key required) and displays it through a clean and simple user interface.
 
 ---
 
 ## ✨ Features
 
-- Search weather by city name
-- Displays temperature in Celsius
-- Shows wind speed
-- Frontend connected to backend REST API
-- No API key required
-- Clean project structure
+- 🌍 Search weather by city name
+- 🌡 Displays temperature in Celsius
+- 💨 Shows wind speed
+- 🔗 Frontend connected to backend REST API
+- 🔓 No API key required
+- 🧱 Clean and simple project structure
+
+---
+
+## 🛠 Tech Stack
+
+- **Backend:** Python, Flask
+- **Frontend:** HTML, CSS, JavaScript
+- **API:** Open-Meteo (Weather + Geocoding)
+- **Tools:** VS Code, Git, GitHub
 
 ---
 
@@ -36,7 +45,7 @@ weather-app/
 
 ### Step 1: Run Backend (Flask API)
 
-Open terminal and run:
+Open a terminal and run:
 
 cd backend  
 pip install -r requirements.txt  
@@ -52,9 +61,9 @@ http://127.0.0.1:5000
 
 Open the following file in your browser:
 
-frontend/index.html
+frontend/index.html  
 
-You can also use VS Code **Go Live** if preferred.
+You may also use **VS Code Go Live** if preferred.
 
 ---
 
@@ -82,14 +91,14 @@ Example Response:
 - CORS handling
 - External API integration
 - Frontend–Backend communication
-- Full-stack project structure
+- Full-stack application architecture
 
 ---
 
 ## 🚀 Future Improvements
 
 - Add weather icons
-- Add 5-day forecast
+- Add 5-day weather forecast
 - Improve UI design
 - Deploy backend online
 - Deploy frontend using GitHub Pages or Netlify
