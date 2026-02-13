@@ -1,8 +1,10 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import requests
+
 app = Flask(__name__)
 CORS(app)
+
 @app.route("/health")
 def health():
     return jsonify({
@@ -17,7 +19,7 @@ def weather():
     if not city:
         return jsonify({"error": "City parameter is required"}), 400
 
-    # Step 1: Geocoding (city -> lat/lon)
+    # Step 1: Geocoding
     geo_url = f"https://geocoding-api.open-meteo.com/v1/search?name={city}&count=1"
     geo_res = requests.get(geo_url).json()
 
@@ -28,7 +30,7 @@ def weather():
     lon = geo_res["results"][0]["longitude"]
     city_name = geo_res["results"][0]["name"]
 
-    # Step 2: Get current weather
+    # Step 2: Current weather
     weather_url = (
         "https://api.open-meteo.com/v1/forecast"
         f"?latitude={lat}&longitude={lon}&current_weather=true"
